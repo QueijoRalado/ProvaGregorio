@@ -3,14 +3,16 @@ resultado=0
 lista = (valor.split())
 
 um_por_cento = int(lista[0])/100
+primeiro = lista[0]
 objetivo = int(lista[1])
 
+n=0
 modificador = 1
 
 while resultado!=objetivo:
-    resultado = 0.2*modificador
-    modificador+=1
+    resultado = (primeiro*(1+n/10))
     print(resultado)
+    n+=1
 
 print(modificador)
 """
